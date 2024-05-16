@@ -1,0 +1,90 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.add-product-form input,
+.add-product-form button {
+    margin-right: 10px;
+}
+
+#searchInput {
+    margin-top: 20px;
+}
+
+#productList {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#productList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    column-gap: 10px;
+    animation: fadeIn 2s ease forwards; 
+}
+
+#productList li img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+#totalPrice {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    color: white;
+    transition: background-color 0.3s ease 0s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+input {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.removing {
+    animation: fadeOut 2s ease forwards; 
+}

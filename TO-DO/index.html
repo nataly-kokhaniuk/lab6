@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>To-Do List</h1>
+        <input type="text" id="newItem" placeholder="Введіть нову задачу" />
+        <button type="button" id="addItemBtn" onclick="addItem()">Додати</button>
+
+        <div class="filters">
+            <button type="button" onclick="sortTasksByDate('asc')">
+                Сортувати за датою (зростання)
+            </button>
+            <button type="button" onclick="sortTasksByDate('desc')">
+                Сортувати за датою (спадання)
+            </button>
+    
+            <button type="button" onclick="sortTasksByCompletion('asc')">
+                Сортувати за статусом (зростання)
+            </button>
+            <button type="button" onclick="sortTasksByCompletion('desc')">
+                Сортувати за статусом (спадання)
+            </button>
+        </div>
+
+
+        <ul id="taskList"></ul>
+
+        <script src="script.js"></script>
+    </body>
+</html>

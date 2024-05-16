@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.filters {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    column-gap: 10px;
+}
+
+#taskList li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#taskList li label, #taskList li .editTask {
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.editTask, #newItem{
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.saveEditBtn, .editTask {
+    display: none;
+}
+
+#taskList li.editing input[type="text"], #taskList li.editing .saveEditBtn {
+    display: block;
+}
+
+#taskList li.editing label, #taskList li.editing .editTaskBtn {
+    display: none;
+}
+
+#taskList li.completed {
+    border: 1px solid #ccc;
+}
+
+.completed label{
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+button {
+   padding: 10px 20px;
+   border-radius: 5px;
+}
+
+.removeTaskBtn{
+    background-color: #ff5858;
+    color: white;
+    transition: background-color 0.3s ease 0s;
+}
+
+.removeTaskBtn:hover{
+    background-color: #f44336;
+}
+
+#addItemBtn, .saveEditBtn {
+    background-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s ease 0s;
+}
+
+#addItemBtn:hover, .saveEditBtn:hover {
+    background-color: #45a049;
+}
+

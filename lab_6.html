@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Product List</h1>
+    <div class="add-product-form">
+        <input type="text" id="productName" placeholder="Назва товару">
+        <input type="text" id="productPrice" placeholder="Ціна товару">
+        <input type="text" id="productImage" placeholder="URL зображення товару">
+        <button onclick="addProduct()">Додати товар</button>
+    </div>
+    <input type="text" id="searchInput" oninput="filterProducts()" placeholder="Пошук за назвою">
+    <ul id="productList"></ul>
+    <div id="totalPrice"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
